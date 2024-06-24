@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
+	"github.com/developc3ntro/omni-goflow/utils/i18n"
 	"github.com/nyaruka/gocommon/dates"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
-	"github.com/nyaruka/goflow/utils/i18n"
 )
 
 // describes the location of a piece of extracted text

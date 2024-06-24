@@ -3,11 +3,11 @@ package inputs_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/assets/static"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows/engine"
-	"github.com/nyaruka/goflow/flows/inputs"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows/engine"
+	"github.com/developc3ntro/omni-goflow/flows/inputs"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

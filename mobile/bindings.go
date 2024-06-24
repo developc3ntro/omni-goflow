@@ -3,24 +3,24 @@ package mobile
 // To build an Android Archive:
 //
 // go get golang.org/x/mobile/cmd/gomobile
-// gomobile bind -target android -javapkg=com.nyaruka.goflow -o mobile/goflow.aar github.com/nyaruka/goflow/mobile
+// gomobile bind -target android -javapkg=com.nyaruka.goflow -o mobile/goflow.aar github.com/developc3ntro/omni-goflow/mobile
 
 import (
 	"encoding/json"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/flows/definition/migrations"
+	"github.com/developc3ntro/omni-goflow/flows/engine"
+	"github.com/developc3ntro/omni-goflow/flows/resumes"
+	"github.com/developc3ntro/omni-goflow/flows/triggers"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/assets/static"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/flows/definition/migrations"
-	"github.com/nyaruka/goflow/flows/engine"
-	"github.com/nyaruka/goflow/flows/resumes"
-	"github.com/nyaruka/goflow/flows/triggers"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/Masterminds/semver"
 )

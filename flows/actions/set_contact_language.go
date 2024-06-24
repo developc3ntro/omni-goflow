@@ -3,10 +3,10 @@ package actions
 import (
 	"strings"
 
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/modifiers"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/modifiers"
 )
 
 func init() {
@@ -20,11 +20,11 @@ const TypeSetContactLanguage string = "set_contact_language"
 // template and white space is trimmed from the final value. An empty string clears the language.
 // A [event:contact_language_changed] event will be created with the corresponding value.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "set_contact_language",
-//     "language": "eng"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "set_contact_language",
+//	  "language": "eng"
+//	}
 //
 // @action set_contact_language
 type SetContactLanguageAction struct {

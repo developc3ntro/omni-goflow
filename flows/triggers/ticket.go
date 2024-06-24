@@ -3,12 +3,12 @@ package triggers
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 	"github.com/pkg/errors"
 )
 
@@ -35,25 +35,25 @@ type TicketEvent struct {
 
 // TicketTrigger is used when a session was triggered by a ticket event
 //
-//   {
-//     "type": "ticket",
-//     "flow": {"uuid": "50c3706e-fedb-42c0-8eab-dda3335714b7", "name": "Registration"},
-//     "contact": {
-//       "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
-//       "name": "Bob",
-//       "created_on": "2018-01-01T12:00:00.000000Z"
-//     },
-//     "event": {
-//         "type": "closed",
-//         "ticket": {
-//             "uuid": "58e9b092-fe42-4173-876c-ff45a14a24fe",
-//             "ticketer": {"uuid": "19dc6346-9623-4fe4-be80-538d493ecdf5", "name": "Support Tickets"},
-//             "topic": {"uuid": "472a7a73-96cb-4736-b567-056d987cc5b4", "name": "Weather"},
-//             "body": "Where are my shoes?"
-//         }
-//     },
-//     "triggered_on": "2000-01-01T00:00:00.000000000-00:00"
-//   }
+//	{
+//	  "type": "ticket",
+//	  "flow": {"uuid": "50c3706e-fedb-42c0-8eab-dda3335714b7", "name": "Registration"},
+//	  "contact": {
+//	    "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
+//	    "name": "Bob",
+//	    "created_on": "2018-01-01T12:00:00.000000Z"
+//	  },
+//	  "event": {
+//	      "type": "closed",
+//	      "ticket": {
+//	          "uuid": "58e9b092-fe42-4173-876c-ff45a14a24fe",
+//	          "ticketer": {"uuid": "19dc6346-9623-4fe4-be80-538d493ecdf5", "name": "Support Tickets"},
+//	          "topic": {"uuid": "472a7a73-96cb-4736-b567-056d987cc5b4", "name": "Weather"},
+//	          "body": "Where are my shoes?"
+//	      }
+//	  },
+//	  "triggered_on": "2000-01-01T00:00:00.000000000-00:00"
+//	}
 //
 // @trigger ticket
 type TicketTrigger struct {

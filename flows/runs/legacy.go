@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/utils"
 )
 
 var invalidLegacyExtraKeyChars = regexp.MustCompile(`[^a-zA-Z0-9_]`)

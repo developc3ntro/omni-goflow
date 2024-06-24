@@ -1,6 +1,6 @@
 package events
 
-import "github.com/nyaruka/goflow/flows"
+import "github.com/developc3ntro/omni-goflow/flows"
 
 func init() {
 	registerType(TypeContactStatusChanged, func() flows.Event { return &ContactStatusChangedEvent{} })

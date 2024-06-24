@@ -3,10 +3,10 @@ package actions
 import (
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
 )
 
 func init() {
@@ -20,11 +20,11 @@ const TypePlayAudio string = "play_audio"
 // [event:ivr_created] event if there is a valid audio URL. This will contain a message which
 // the caller should handle as an IVR play command using the audio attachment.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "play_audio",
-//     "audio_url": "http://uploads.temba.io/2353262.m4a"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "play_audio",
+//	  "audio_url": "http://uploads.temba.io/2353262.m4a"
+//	}
 //
 // @action play_audio
 type PlayAudioAction struct {

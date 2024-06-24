@@ -4,13 +4,13 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/dates"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/pkg/errors"
 )
@@ -139,12 +139,12 @@ func (t *baseTrigger) context() *Context {
 
 // Context returns the properties available in expressions
 //
-//   type:text -> the type of trigger that started this session
-//   params:any -> the parameters passed to the trigger
-//   keyword:text -> the keyword match if this is a keyword trigger
-//   user:user -> the user who started this session if this is a manual trigger
-//   origin:text -> the origin of this session if this is a manual trigger
-//   ticket:ticket -> the ticket if this is a ticket trigger
+//	type:text -> the type of trigger that started this session
+//	params:any -> the parameters passed to the trigger
+//	keyword:text -> the keyword match if this is a keyword trigger
+//	user:user -> the user who started this session if this is a manual trigger
+//	origin:text -> the origin of this session if this is a manual trigger
+//	ticket:ticket -> the ticket if this is a ticket trigger
 //
 // @context trigger
 func (t *baseTrigger) Context(env envs.Environment) map[string]types.XValue {

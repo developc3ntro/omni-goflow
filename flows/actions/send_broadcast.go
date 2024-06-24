@@ -1,11 +1,11 @@
 package actions
 
 import (
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
 )
 
 func init() {
@@ -21,12 +21,12 @@ const TypeSendBroadcast string = "send_broadcast"
 // The URNs and text fields may be templates. A [event:broadcast_created] event will be created for each unique urn, contact and group
 // with the evaluated text.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "send_broadcast",
-//     "urns": ["tel:+12065551212"],
-//     "text": "Hi @contact.name, are you ready to complete today's survey?"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "send_broadcast",
+//	  "urns": ["tel:+12065551212"],
+//	  "text": "Hi @contact.name, are you ready to complete today's survey?"
+//	}
 //
 // @action send_broadcast
 type SendBroadcastAction struct {

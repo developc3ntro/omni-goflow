@@ -1,9 +1,9 @@
 package flows
 
 import (
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/utils"
 
 	validator "gopkg.in/go-playground/validator.v9"
 )

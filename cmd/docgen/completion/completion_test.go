@@ -3,7 +3,7 @@ package completion_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/cmd/docgen/completion"
+	"github.com/developc3ntro/omni-goflow/cmd/docgen/completion"
 	"github.com/stretchr/testify/assert"
 )
 

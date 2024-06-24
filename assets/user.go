@@ -3,8 +3,8 @@ package assets
 import (
 	"fmt"
 
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/utils"
 	validator "gopkg.in/go-playground/validator.v9"
 )
 
@@ -14,10 +14,10 @@ func init() {
 
 // User is an person who can trigger flows or be assigned tickets etc.
 //
-//   {
-//     "email": "bob@nyaruka.com",
-//     "name": "Bob"
-//   }
+//	{
+//	  "email": "bob@nyaruka.com",
+//	  "name": "Bob"
+//	}
 //
 // @asset user
 type User interface {

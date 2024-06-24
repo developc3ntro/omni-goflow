@@ -1,6 +1,6 @@
 package functions
 
-import "github.com/nyaruka/goflow/utils"
+import "github.com/developc3ntro/omni-goflow/utils"
 
 func extractWords(text string, delimiters string) []string {
 	if delimiters != "" {

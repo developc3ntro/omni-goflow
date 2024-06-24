@@ -3,17 +3,17 @@ package types
 import (
 	"strconv"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // XBoolean is a boolean `true` or `false`.
 //
-//   @(true) -> true
-//   @(1 = 1) -> true
-//   @(1 = 2) -> false
-//   @(json(true)) -> true
+//	@(true) -> true
+//	@(1 = 1) -> true
+//	@(1 = 2) -> false
+//	@(json(true)) -> true
 //
 // @type boolean
 type XBoolean struct {

@@ -3,13 +3,13 @@ package waits_test
 import (
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/resumes"
+	"github.com/developc3ntro/omni-goflow/flows/routers/waits"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/resumes"
-	"github.com/nyaruka/goflow/flows/routers/waits"
-	"github.com/nyaruka/goflow/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

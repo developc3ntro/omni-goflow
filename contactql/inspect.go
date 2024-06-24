@@ -1,8 +1,8 @@
 package contactql
 
 import (
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/utils"
 )
 
 // Inspection holds the result of inspecting a query

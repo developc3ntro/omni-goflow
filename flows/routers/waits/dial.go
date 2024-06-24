@@ -3,12 +3,12 @@ package waits
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/resumes"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/resumes"
-	"github.com/nyaruka/goflow/utils"
 )
 
 func init() {

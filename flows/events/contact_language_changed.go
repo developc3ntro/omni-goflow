@@ -1,8 +1,8 @@
 package events
 
 import (
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -14,11 +14,11 @@ const TypeContactLanguageChanged string = "contact_language_changed"
 
 // ContactLanguageChangedEvent events are created when the language of the contact has been changed.
 //
-//   {
-//     "type": "contact_language_changed",
-//     "created_on": "2006-01-02T15:04:05Z",
-//     "language": "eng"
-//   }
+//	{
+//	  "type": "contact_language_changed",
+//	  "created_on": "2006-01-02T15:04:05Z",
+//	  "language": "eng"
+//	}
 //
 // @event contact_language_changed
 type ContactLanguageChangedEvent struct {

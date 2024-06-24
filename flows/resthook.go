@@ -1,7 +1,7 @@
 package flows
 
 import (
-	"github.com/nyaruka/goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets"
 )
 
 // Resthook represents a named event and a set of subscribers

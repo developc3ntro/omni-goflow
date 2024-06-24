@@ -1,12 +1,12 @@
 package flows
 
 import (
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // TicketUUID is the UUID of a ticket
@@ -49,9 +49,9 @@ func (t *Ticket) Assignee() *User         { return t.assignee }
 
 // Context returns the properties available in expressions
 //
-//   uuid:text -> the UUID of the ticket
-//   subject:text -> the subject of the ticket
-//   body:text -> the body of the ticket
+//	uuid:text -> the UUID of the ticket
+//	subject:text -> the subject of the ticket
+//	body:text -> the body of the ticket
 //
 // @context ticket
 func (t *Ticket) Context(env envs.Environment) map[string]types.XValue {

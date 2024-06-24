@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/flows/definition/legacy"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/flows/definition/legacy"
-	"github.com/nyaruka/goflow/test"
 
 	"github.com/buger/jsonparser"
 	"github.com/stretchr/testify/assert"

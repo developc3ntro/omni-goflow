@@ -3,8 +3,8 @@ package static
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/assets"
 
 	"github.com/buger/jsonparser"
 	"github.com/pkg/errors"

@@ -3,15 +3,15 @@ package definition
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/actions"
+	"github.com/developc3ntro/omni-goflow/flows/inspect"
+	"github.com/developc3ntro/omni-goflow/flows/routers"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/actions"
-	"github.com/nyaruka/goflow/flows/inspect"
-	"github.com/nyaruka/goflow/flows/routers"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/pkg/errors"
 )

@@ -1,9 +1,9 @@
 package actions
 
 import (
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
 	"github.com/pkg/errors"
 
 	"github.com/shopspring/decimal"
@@ -22,12 +22,12 @@ const TypeTransferAirtime string = "transfer_airtime"
 //
 // An [event:airtime_transferred] event will be created if the airtime could be sent.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "transfer_airtime",
-//     "amounts": {"RWF": 500, "USD": 0.5},
-//     "result_name": "Reward Transfer"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "transfer_airtime",
+//	  "amounts": {"RWF": 500, "USD": 0.5},
+//	  "result_name": "Reward Transfer"
+//	}
 //
 // @action transfer_airtime
 type TransferAirtimeAction struct {

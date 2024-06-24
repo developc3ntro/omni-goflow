@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/cmd/docgen/completion"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/cmd/docgen/completion"
 
 	"github.com/pkg/errors"
 )

@@ -1,9 +1,9 @@
 package flows
 
 import (
+	"github.com/developc3ntro/omni-goflow/assets"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
 )
 
 // Connection represents a connection to a specific channel using a specific URN

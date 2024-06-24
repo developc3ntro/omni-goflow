@@ -3,8 +3,8 @@ package smtp
 import (
 	"strings"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils/smtpx"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils/smtpx"
 )
 
 type service struct {

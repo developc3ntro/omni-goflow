@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	"github.com/nyaruka/goflow/excellent/gen"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/excellent/gen"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // visitor which evaluates each part of an expression as a value

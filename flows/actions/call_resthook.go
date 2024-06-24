@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 
 	"github.com/pkg/errors"
 )
@@ -56,11 +56,11 @@ const TypeCallResthook string = "call_resthook"
 // be created with that name, and if the resthook returns valid JSON, that will be accessible
 // through `extra` on the result.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "call_resthook",
-//     "resthook": "new-registration"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "call_resthook",
+//	  "resthook": "new-registration"
+//	}
 //
 // @action call_resthook
 type CallResthookAction struct {

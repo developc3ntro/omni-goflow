@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/contactql/gen"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/contactql/gen"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/shopspring/decimal"
 )
 

@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 
 	"github.com/pkg/errors"
 )

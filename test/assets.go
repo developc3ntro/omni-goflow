@@ -3,13 +3,13 @@ package test
 import (
 	"os"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/definition/migrations"
+	"github.com/developc3ntro/omni-goflow/flows/engine"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/assets/static"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/definition/migrations"
-	"github.com/nyaruka/goflow/flows/engine"
 )
 
 // LoadSessionAssets loads a session assets instance from a static JSON file

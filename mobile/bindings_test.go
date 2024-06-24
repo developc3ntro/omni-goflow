@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/mobile"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/mobile"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

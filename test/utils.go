@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/excellent/types"
 
 	"github.com/buger/jsonparser"
 	diff "github.com/sergi/go-diff/diffmatchpatch"

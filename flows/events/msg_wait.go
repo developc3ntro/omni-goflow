@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/routers/waits/hints"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/routers/waits/hints"
+	"github.com/developc3ntro/omni-goflow/utils"
 
 	"github.com/pkg/errors"
 )
@@ -22,15 +22,15 @@ const TypeMsgWait string = "msg_wait"
 // a contact. If a timeout is set, then the caller should resume the flow after
 // the number of seconds in the timeout to resume it.
 //
-//   {
-//     "type": "msg_wait",
-//     "created_on": "2022-01-03T13:27:30Z",
-//     "timeout_seconds": 300,
-//     "expires_on": "2022-02-02T13:27:30Z",
-//     "hint": {
-//        "type": "image"
-//     }
-//   }
+//	{
+//	  "type": "msg_wait",
+//	  "created_on": "2022-01-03T13:27:30Z",
+//	  "timeout_seconds": 300,
+//	  "expires_on": "2022-02-02T13:27:30Z",
+//	  "hint": {
+//	     "type": "image"
+//	  }
+//	}
 //
 // @event msg_wait
 type MsgWaitEvent struct {

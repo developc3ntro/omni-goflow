@@ -3,10 +3,10 @@ package flows_test
 import (
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/test"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,7 +1,7 @@
 package static
 
 import (
-	"github.com/nyaruka/goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets"
 )
 
 // Global is a JSON serializable implementation of a global asset

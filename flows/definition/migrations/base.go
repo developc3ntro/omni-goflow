@@ -4,11 +4,11 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/flows/definition/legacy"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/flows/definition/legacy"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/Masterminds/semver"
 	"github.com/pkg/errors"

@@ -1,9 +1,9 @@
 package actions
 
 import (
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 )
 
 func init() {
@@ -17,14 +17,14 @@ const TypeAddInputLabels string = "add_input_labels"
 // will be created with the labels added when this action is encountered. If there is
 // no user input at that point then this action will be ignored.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "add_input_labels",
-//     "labels": [{
-//       "uuid": "3f65d88a-95dc-4140-9451-943e94e06fea",
-//       "name": "Spam"
-//     }]
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "add_input_labels",
+//	  "labels": [{
+//	    "uuid": "3f65d88a-95dc-4140-9451-943e94e06fea",
+//	    "name": "Spam"
+//	  }]
+//	}
 //
 // @action add_input_labels
 type AddInputLabelsAction struct {

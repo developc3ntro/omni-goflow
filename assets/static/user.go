@@ -1,7 +1,7 @@
 package static
 
 import (
-	"github.com/nyaruka/goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets"
 )
 
 // User is a JSON serializable implementation of a user asset

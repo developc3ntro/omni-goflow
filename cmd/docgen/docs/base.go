@@ -6,8 +6,8 @@ import (
 	"path"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/utils/i18n"
 	"github.com/nyaruka/gocommon/dates"
-	"github.com/nyaruka/goflow/utils/i18n"
 
 	"github.com/pkg/errors"
 )

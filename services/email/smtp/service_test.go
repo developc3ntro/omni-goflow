@@ -3,8 +3,8 @@ package smtp_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/services/email/smtp"
-	"github.com/nyaruka/goflow/utils/smtpx"
+	"github.com/developc3ntro/omni-goflow/services/email/smtp"
+	"github.com/developc3ntro/omni-goflow/utils/smtpx"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

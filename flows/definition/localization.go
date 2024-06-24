@@ -3,27 +3,29 @@ package definition
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
 )
 
 // holds all property translations for a specific item, e.g.
-// {
-//   "text": "Do you like cheese?"
-//	 "quick_replies": ["Yes", "No"]
-// }
+//
+//	{
+//	  "text": "Do you like cheese?"
+//		 "quick_replies": ["Yes", "No"]
+//	}
 type itemTranslation map[string][]string
 
 // holds all the item translations for a specific language, e.g.
-// {
-//   "f3368070-8db8-4549-872a-e69a9d060612": {
-//	   "text": "Do you like cheese?"
-//	   "quick_replies": ["Yes", "No"]
-//   },
-//   "7a1aec43-f3e1-42f0-b967-0ee75e725e3a": { ... }
-// }
+//
+//	{
+//	  "f3368070-8db8-4549-872a-e69a9d060612": {
+//		   "text": "Do you like cheese?"
+//		   "quick_replies": ["Yes", "No"]
+//	  },
+//	  "7a1aec43-f3e1-42f0-b967-0ee75e725e3a": { ... }
+//	}
 type languageTranslation map[uuids.UUID]itemTranslation
 
 // returns the requested item translation

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows/definition/legacy/gen"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows/definition/legacy/gen"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
 )

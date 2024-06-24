@@ -4,9 +4,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
 	"github.com/pkg/errors"
 )
 
@@ -22,13 +22,13 @@ const TypeSendEmail string = "send_email"
 //
 // An [event:email_sent] event will be created if the email could be sent.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "send_email",
-//     "addresses": ["@urns.mailto"],
-//     "subject": "Here is your activation token",
-//     "body": "Your activation token is @contact.fields.activation_token"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "send_email",
+//	  "addresses": ["@urns.mailto"],
+//	  "subject": "Here is your activation token",
+//	  "body": "Your activation token is @contact.fields.activation_token"
+//	}
 //
 // @action send_email
 type SendEmailAction struct {

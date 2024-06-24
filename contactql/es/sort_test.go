@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/contactql/es"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/contactql/es"
-	"github.com/nyaruka/goflow/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

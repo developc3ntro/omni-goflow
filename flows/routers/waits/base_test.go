@@ -3,8 +3,8 @@ package waits_test
 import (
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/flows/routers/waits"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/flows/routers/waits"
 
 	"github.com/stretchr/testify/assert"
 )

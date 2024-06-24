@@ -6,10 +6,10 @@ import (
 	"strings"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/contactql/gen"
+	"github.com/developc3ntro/omni-goflow/envs"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/contactql/gen"
-	"github.com/nyaruka/goflow/envs"
 )
 
 // an implicit condition like +123-124-6546 or 1234 will be interpreted as a tel ~ condition

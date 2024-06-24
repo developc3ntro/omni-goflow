@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	main "github.com/nyaruka/goflow/cmd/flowmigrate"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/test"
+	main "github.com/developc3ntro/omni-goflow/cmd/flowmigrate"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/stretchr/testify/require"
 )
 

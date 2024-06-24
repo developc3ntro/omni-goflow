@@ -3,7 +3,7 @@ package engine_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/flows/engine"
+	"github.com/developc3ntro/omni-goflow/flows/engine"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,9 +3,9 @@ package flows
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/assets/static"
-	"github.com/nyaruka/goflow/envs"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/envs"
 
 	"github.com/stretchr/testify/assert"
 )

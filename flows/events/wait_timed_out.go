@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -14,10 +14,10 @@ const TypeWaitTimedOut string = "wait_timed_out"
 // WaitTimedOutEvent events are sent by the caller when a wait has timed out - i.e. they are sent instead of
 // the item that the wait was waiting for.
 //
-//   {
-//     "type": "wait_timed_out",
-//     "created_on": "2006-01-02T15:04:05Z"
-//   }
+//	{
+//	  "type": "wait_timed_out",
+//	  "created_on": "2006-01-02T15:04:05Z"
+//	}
 //
 // @event wait_timed_out
 type WaitTimedOutEvent struct {

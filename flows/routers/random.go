@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/random"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/shopspring/decimal"
 )

@@ -3,7 +3,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/utils"
 
 	"github.com/stretchr/testify/assert"
 )

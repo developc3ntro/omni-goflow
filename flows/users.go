@@ -1,10 +1,10 @@
 package flows
 
 import (
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/utils"
 )
 
 // User adds some functionality to user assets.
@@ -41,10 +41,10 @@ func (u *User) Format() string {
 
 // Context returns the properties available in expressions
 //
-//   __default__:text -> the name or email
-//   email:text -> the email address of the user
-//   name:text -> the name of the user
-//   first_name:text -> the first name of the user
+//	__default__:text -> the name or email
+//	email:text -> the email address of the user
+//	name:text -> the name of the user
+//	first_name:text -> the first name of the user
 //
 // @context user
 func (u *User) Context(env envs.Environment) map[string]types.XValue {

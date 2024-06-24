@@ -3,10 +3,10 @@ package inspect_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/actions"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/flows/inspect"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/actions"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/flows/inspect"
 
 	"github.com/stretchr/testify/assert"
 )

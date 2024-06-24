@@ -3,7 +3,7 @@ package envs_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/envs"
+	"github.com/developc3ntro/omni-goflow/envs"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -6,9 +6,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
 	"github.com/pkg/errors"
 )
 
@@ -16,11 +16,11 @@ const serializeDefaultAs = "__default__"
 
 // XObject is an object with named properties.
 //
-//   @(object("foo", 1, "bar", "x")) -> {bar: x, foo: 1}
-//   @(object("foo", 1, "bar", "x").bar) -> x
-//   @(object("foo", 1, "bar", "x")["bar"]) -> x
-//   @(count(object("foo", 1, "bar", "x"))) -> 2
-//   @(json(object("foo", 1, "bar", "x"))) -> {"bar":"x","foo":1}
+//	@(object("foo", 1, "bar", "x")) -> {bar: x, foo: 1}
+//	@(object("foo", 1, "bar", "x").bar) -> x
+//	@(object("foo", 1, "bar", "x")["bar"]) -> x
+//	@(count(object("foo", 1, "bar", "x"))) -> 2
+//	@(json(object("foo", 1, "bar", "x"))) -> {"bar":"x","foo":1}
 //
 // @type object
 type XObject struct {

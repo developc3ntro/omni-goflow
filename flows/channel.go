@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // Channel represents a means for sending and receiving input during a flow run
@@ -59,10 +59,10 @@ func (c *Channel) HasParent() bool {
 
 // Context returns the properties available in expressions
 //
-//   __default__:text -> the name
-//   uuid:text -> the UUID of the channel
-//   name:text -> the name of the channel
-//   address:text -> the address of the channel
+//	__default__:text -> the name
+//	uuid:text -> the UUID of the channel
+//	name:text -> the name of the channel
+//	address:text -> the address of the channel
 //
 // @context channel
 func (c *Channel) Context(env envs.Environment) map[string]types.XValue {

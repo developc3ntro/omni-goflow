@@ -3,8 +3,8 @@ package inspect
 import (
 	"reflect"
 
+	"github.com/developc3ntro/omni-goflow/flows"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/flows"
 )
 
 // LocalizableText extracts localizable text by reading engine tags on a struct

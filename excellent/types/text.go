@@ -5,17 +5,17 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // XText is a string of characters.
 //
-//   @("abc") -> abc
-//   @(text_length("abc")) -> 3
-//   @(upper("abc")) -> ABC
-//   @(json("abc")) -> "abc"
+//	@("abc") -> abc
+//	@(text_length("abc")) -> 3
+//	@(upper("abc")) -> ABC
+//	@(json("abc")) -> "abc"
 //
 // @type text
 type XText struct {

@@ -1,8 +1,8 @@
 package excellent
 
 import (
-	"github.com/nyaruka/goflow/excellent/functions"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/excellent/functions"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // Scope provides access to context objects

@@ -3,7 +3,7 @@ package excellent
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 	"github.com/stretchr/testify/assert"
 )
 

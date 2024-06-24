@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/functions"
-	"github.com/nyaruka/goflow/excellent/operators"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/functions"
+	"github.com/developc3ntro/omni-goflow/excellent/operators"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // Expression is the base interface of all syntax elements

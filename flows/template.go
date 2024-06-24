@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
 )
 
 // Template represents messaging templates used by channels types such as WhatsApp

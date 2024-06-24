@@ -4,17 +4,17 @@ import (
 	"encoding/json"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // XArray is an array of items.
 //
-//   @(array(1, "x", true)) -> [1, x, true]
-//   @(array(1, "x", true)[1]) -> x
-//   @(count(array(1, "x", true))) -> 3
-//   @(json(array(1, "x", true))) -> [1,"x",true]
+//	@(array(1, "x", true)) -> [1, x, true]
+//	@(array(1, "x", true)[1]) -> x
+//	@(count(array(1, "x", true))) -> 3
+//	@(json(array(1, "x", true))) -> [1,"x",true]
 //
 // @type array
 type XArray struct {

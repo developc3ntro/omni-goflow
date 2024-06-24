@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/engine"
-	"github.com/nyaruka/goflow/services/webhooks"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/engine"
+	"github.com/developc3ntro/omni-goflow/services/webhooks"
 
 	"github.com/stretchr/testify/assert"
 )

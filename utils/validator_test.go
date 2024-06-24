@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	_ "github.com/nyaruka/goflow/envs"
-	_ "github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
+	_ "github.com/developc3ntro/omni-goflow/envs"
+	_ "github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"gopkg.in/go-playground/validator.v9"
 
 	"github.com/stretchr/testify/assert"

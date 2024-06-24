@@ -2,13 +2,13 @@ package main
 
 // generate full docs with:
 //
-// go install github.com/nyaruka/goflow/cmd/docgen; docgen
+// go install github.com/developc3ntro/omni-goflow/cmd/docgen; docgen
 
 import (
 	"fmt"
 	"os"
 
-	"github.com/nyaruka/goflow/cmd/docgen/docs"
+	"github.com/developc3ntro/omni-goflow/cmd/docgen/docs"
 )
 
 const (

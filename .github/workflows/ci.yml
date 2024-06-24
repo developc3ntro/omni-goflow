@@ -46,7 +46,7 @@ jobs:
 
       - name: Build docs
         run: |
-          go install github.com/nyaruka/goflow/cmd/docgen
+          go install github.com/developc3ntro/omni-goflow/cmd/docgen
           docgen
           tar -zcf docs.tar.gz docs
 

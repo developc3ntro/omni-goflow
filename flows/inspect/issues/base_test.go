@@ -6,12 +6,12 @@ import (
 	"os"
 	"testing"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/flows/inspect/issues"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/flows/inspect/issues"
-	"github.com/nyaruka/goflow/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

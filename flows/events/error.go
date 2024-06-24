@@ -3,8 +3,8 @@ package events
 import (
 	"fmt"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -16,11 +16,11 @@ const TypeError string = "error"
 
 // ErrorEvent events are created when an error occurs during flow execution.
 //
-//   {
-//     "type": "error",
-//     "created_on": "2006-01-02T15:04:05Z",
-//     "text": "invalid date format: '12th of October'"
-//   }
+//	{
+//	  "type": "error",
+//	  "created_on": "2006-01-02T15:04:05Z",
+//	  "text": "invalid date format: '12th of October'"
+//	}
 //
 // @event error
 type ErrorEvent struct {

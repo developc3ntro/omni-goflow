@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/contactql"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/contactql"
 
 	"github.com/olivere/elastic/v7"
 	"github.com/pkg/errors"

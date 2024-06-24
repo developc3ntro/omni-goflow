@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -13,14 +13,14 @@ const TypeDialEnded string = "dial_ended"
 
 // DialEndedEvent events are created when a session is resumed after waiting for a dial.
 //
-//   {
-//     "type": "dial_ended",
-//     "created_on": "2019-01-02T15:04:05Z",
-//     "dial": {
-//       "status": "answered",
-//       "duration": 10
-//     }
-//   }
+//	{
+//	  "type": "dial_ended",
+//	  "created_on": "2019-01-02T15:04:05Z",
+//	  "dial": {
+//	    "status": "answered",
+//	    "duration": 10
+//	  }
+//	}
 //
 // @event dial_ended
 type DialEndedEvent struct {

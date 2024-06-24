@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/modifiers"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/modifiers"
 )
 
 func init() {
@@ -20,12 +20,12 @@ const TypeAddContactURN string = "add_contact_urn"
 // AddContactURNAction can be used to add a URN to the current contact. A [event:contact_urns_changed] event
 // will be created when this action is encountered.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "add_contact_urn",
-//     "scheme": "tel",
-//     "path": "@results.phone_number.value"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "add_contact_urn",
+//	  "scheme": "tel",
+//	  "path": "@results.phone_number.value"
+//	}
 //
 // @action add_contact_urn
 type AddContactURNAction struct {

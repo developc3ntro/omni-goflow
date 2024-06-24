@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/nyaruka/goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/assets/static"
 	"github.com/stretchr/testify/assert"
 )
 

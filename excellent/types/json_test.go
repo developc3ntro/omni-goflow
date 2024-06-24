@@ -3,10 +3,10 @@ package types_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/test"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/stretchr/testify/assert"
 )
 

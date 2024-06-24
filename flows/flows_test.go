@@ -3,9 +3,9 @@ package flows_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/actions"
-	"github.com/nyaruka/goflow/flows/routers/waits"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/actions"
+	"github.com/developc3ntro/omni-goflow/flows/routers/waits"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

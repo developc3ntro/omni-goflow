@@ -3,9 +3,9 @@ package flows
 import (
 	"strings"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // Topic represents a ticket topic
@@ -31,9 +31,9 @@ func (t *Topic) Reference() *assets.TopicReference {
 
 // Context returns the properties available in expressions
 //
-//   __default__:text -> the name
-//   uuid:text -> the UUID of the topic
-//   name:text -> the name of the topic
+//	__default__:text -> the name
+//	uuid:text -> the UUID of the topic
+//	name:text -> the name of the topic
 //
 // @context topic
 func (t *Topic) Context(env envs.Environment) map[string]types.XValue {

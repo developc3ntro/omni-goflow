@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/assets/static"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/modifiers"
 	"github.com/nyaruka/gocommon/dates"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/assets/static"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/modifiers"
 
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"

@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -13,11 +13,11 @@ const TypeFailure string = "failure"
 
 // FailureEvent events are created when an error occurs during flow execution which prevents continuation of the session.
 //
-//   {
-//     "type": "failure",
-//     "created_on": "2006-01-02T15:04:05Z",
-//     "text": "unable to read flow"
-//   }
+//	{
+//	  "type": "failure",
+//	  "created_on": "2006-01-02T15:04:05Z",
+//	  "text": "unable to read flow"
+//	}
 //
 // @event failure
 type FailureEvent struct {

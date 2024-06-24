@@ -1,8 +1,8 @@
 package tools
 
 import (
-	"github.com/nyaruka/goflow/excellent"
-	"github.com/nyaruka/goflow/excellent/functions"
+	"github.com/developc3ntro/omni-goflow/excellent"
+	"github.com/developc3ntro/omni-goflow/excellent/functions"
 )
 
 // FindContextRefsInTemplate audits context references in the given template. Note that the case of

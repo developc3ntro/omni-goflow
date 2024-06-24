@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/pkg/errors"
 )
@@ -57,7 +57,6 @@ func (t *Translations) UnmarshalJSON(data []byte) error {
 // TransformTranslations transforms a list of single item translations into a map of multi-item translations, e.g.
 //
 // [{"eng": "yes", "fra": "oui"}, {"eng": "no", "fra": "non"}] becomes {"eng": ["yes", "no"], "fra": ["oui", "non"]}
-//
 func TransformTranslations(items []Translations) map[envs.Language][]string {
 	// re-organize into a map of arrays
 	transformed := make(map[envs.Language][]string)

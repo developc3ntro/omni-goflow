@@ -3,8 +3,8 @@ package hints
 import (
 	"encoding/json"
 
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 
 	"github.com/pkg/errors"
 )

@@ -1,6 +1,6 @@
 package main
 
-// go install github.com/nyaruka/goflow/cmd/flowmigrate
+// go install github.com/developc3ntro/omni-goflow/cmd/flowmigrate
 // cat legacy_flow.json | flowmigrate
 // cat legacy_export.json | jq '.flows[0]' | flowmigrate
 
@@ -13,9 +13,9 @@ import (
 	"os"
 
 	"github.com/Masterminds/semver"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/flows/definition/migrations"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/flows/definition/migrations"
 )
 
 func main() {

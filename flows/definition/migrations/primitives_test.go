@@ -3,7 +3,7 @@ package migrations_test
 import (
 	"testing"
 
-	"github.com/nyaruka/goflow/flows/definition/migrations"
+	"github.com/developc3ntro/omni-goflow/flows/definition/migrations"
 
 	"github.com/stretchr/testify/assert"
 )

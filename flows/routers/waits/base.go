@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/dates"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/pkg/errors"
 )

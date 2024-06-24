@@ -1,6 +1,6 @@
 package assets
 
-import "github.com/nyaruka/goflow/envs"
+import "github.com/developc3ntro/omni-goflow/envs"
 
 // LocationHierarchy is a searchable hierarchy of locations.
 //

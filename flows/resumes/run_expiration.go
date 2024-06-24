@@ -3,12 +3,12 @@ package resumes
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/utils"
 )
 
 func init() {
@@ -20,18 +20,18 @@ const TypeRunExpiration string = "run_expiration"
 
 // RunExpirationResume is used when a session is resumed because the waiting run has expired
 //
-//   {
-//     "type": "run_expiration",
-//     "contact": {
-//       "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
-//       "name": "Bob",
-//       "created_on": "2018-01-01T12:00:00.000000Z",
-//       "language": "fra",
-//       "fields": {"gender": {"text": "Male"}},
-//       "groups": []
-//     },
-//     "resumed_on": "2000-01-01T00:00:00.000000000-00:00"
-//   }
+//	{
+//	  "type": "run_expiration",
+//	  "contact": {
+//	    "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
+//	    "name": "Bob",
+//	    "created_on": "2018-01-01T12:00:00.000000Z",
+//	    "language": "fra",
+//	    "fields": {"gender": {"text": "Male"}},
+//	    "groups": []
+//	  },
+//	  "resumed_on": "2000-01-01T00:00:00.000000000-00:00"
+//	}
 //
 // @resume run_expiration
 type RunExpirationResume struct {

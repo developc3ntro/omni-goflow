@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"sort"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/httpx"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 )
 
 // a classification service implementation for a LUIS app

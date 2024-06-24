@@ -3,9 +3,9 @@ package engine
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/flows"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/flows"
 )
 
 // an instance of the engine

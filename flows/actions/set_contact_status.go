@@ -1,9 +1,9 @@
 package actions
 
 import (
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/events"
-	"github.com/nyaruka/goflow/flows/modifiers"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/events"
+	"github.com/developc3ntro/omni-goflow/flows/modifiers"
 )
 
 func init() {
@@ -16,11 +16,11 @@ const TypeSetContactStatus string = "set_contact_status"
 // SetContactStatusAction can be used to update the status of the contact, e.g. to block or unblock the contact.
 // A [event:contact_status_changed] event will be created with the corresponding value.
 //
-//   {
-//     "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
-//     "type": "set_contact_status",
-//     "status": "blocked"
-//   }
+//	{
+//	  "uuid": "8eebd020-1af5-431c-b943-aa670fc74da9",
+//	  "type": "set_contact_status",
+//	  "status": "blocked"
+//	}
 //
 // @action set_contact_status
 type SetContactStatusAction struct {

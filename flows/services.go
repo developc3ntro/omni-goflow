@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/httpx"
 	"github.com/nyaruka/gocommon/urns"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/shopspring/decimal"
 )

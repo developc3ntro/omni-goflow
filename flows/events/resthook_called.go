@@ -3,7 +3,7 @@ package events
 import (
 	"encoding/json"
 
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -17,16 +17,16 @@ const TypeResthookCalled string = "resthook_called"
 // the payload that will be sent to any subscribers of that resthook. Note that this event is
 // created regardless of whether there any subscriberes for that resthook.
 //
-//   {
-//     "type": "resthook_called",
-//     "created_on": "2006-01-02T15:04:05Z",
-//     "resthook": "success",
-//     "payload": {
-//       "contact:":{
-//         "name":"Bob"
-//       }
-//     }
-//   }
+//	{
+//	  "type": "resthook_called",
+//	  "created_on": "2006-01-02T15:04:05Z",
+//	  "resthook": "success",
+//	  "payload": {
+//	    "contact:":{
+//	      "name":"Bob"
+//	    }
+//	  }
+//	}
 //
 // @event resthook_called
 type ResthookCalledEvent struct {

@@ -3,7 +3,7 @@ package contactql
 import (
 	"fmt"
 
-	"github.com/nyaruka/goflow/utils"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/pkg/errors"
 )
 

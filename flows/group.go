@@ -3,10 +3,10 @@ package flows
 import (
 	"strings"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/contactql"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/contactql"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // Group adds some functionality to group assets.
@@ -60,8 +60,8 @@ func (g *Group) Reference() *assets.GroupReference {
 
 // ToXValue returns a representation of this object for use in expressions
 //
-//   uuid:text -> the UUID of the group
-//   name:text -> the name of the group
+//	uuid:text -> the UUID of the group
+//	name:text -> the name of the group
 //
 // @context group
 func (g *Group) ToXValue(env envs.Environment) types.XValue {

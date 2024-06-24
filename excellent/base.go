@@ -4,9 +4,9 @@ import (
 	"strings"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/gen"
-	"github.com/nyaruka/goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/gen"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
 )
 
 // Escaping is a function applied to expressions in a template after they've been evaluated

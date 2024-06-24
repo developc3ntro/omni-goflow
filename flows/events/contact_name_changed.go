@@ -1,7 +1,7 @@
 package events
 
 import (
-	"github.com/nyaruka/goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows"
 )
 
 func init() {
@@ -13,11 +13,11 @@ const TypeContactNameChanged string = "contact_name_changed"
 
 // ContactNameChangedEvent events are created when the name of the contact has been changed.
 //
-//   {
-//     "type": "contact_name_changed",
-//     "created_on": "2006-01-02T15:04:05Z",
-//     "name": "Bob Smith"
-//   }
+//	{
+//	  "type": "contact_name_changed",
+//	  "created_on": "2006-01-02T15:04:05Z",
+//	  "name": "Bob Smith"
+//	}
 //
 // @event contact_name_changed
 type ContactNameChangedEvent struct {

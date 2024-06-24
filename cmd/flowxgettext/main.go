@@ -8,11 +8,11 @@ import (
 	"os"
 
 	"github.com/buger/jsonparser"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/flows/definition"
-	"github.com/nyaruka/goflow/flows/definition/migrations"
-	"github.com/nyaruka/goflow/flows/translation"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/flows/definition"
+	"github.com/developc3ntro/omni-goflow/flows/definition/migrations"
+	"github.com/developc3ntro/omni-goflow/flows/translation"
 	"github.com/pkg/errors"
 )
 

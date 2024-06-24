@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/services/classification/bothub"
+	"github.com/developc3ntro/omni-goflow/test"
 	"github.com/nyaruka/gocommon/dates"
 	"github.com/nyaruka/gocommon/httpx"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/services/classification/bothub"
-	"github.com/nyaruka/goflow/test"
 
 	"github.com/shopspring/decimal"
 	"github.com/stretchr/testify/assert"

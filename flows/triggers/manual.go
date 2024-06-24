@@ -3,13 +3,13 @@ package triggers
 import (
 	"encoding/json"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/flows"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/flows"
-	"github.com/nyaruka/goflow/utils"
 )
 
 func init() {
@@ -21,18 +21,18 @@ const TypeManual string = "manual"
 
 // ManualTrigger is used when a session was triggered manually by a user
 //
-//   {
-//     "type": "manual",
-//     "flow": {"uuid": "50c3706e-fedb-42c0-8eab-dda3335714b7", "name": "Registration"},
-//     "contact": {
-//       "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
-//       "name": "Bob",
-//       "created_on": "2018-01-01T12:00:00.000000Z"
-//     },
-//     "user": {"email": "bob@nyaruka.com", "name": "Bob"},
-//     "origin": "ui",
-//     "triggered_on": "2000-01-01T00:00:00.000000000-00:00"
-//   }
+//	{
+//	  "type": "manual",
+//	  "flow": {"uuid": "50c3706e-fedb-42c0-8eab-dda3335714b7", "name": "Registration"},
+//	  "contact": {
+//	    "uuid": "9f7ede93-4b16-4692-80ad-b7dc54a1cd81",
+//	    "name": "Bob",
+//	    "created_on": "2018-01-01T12:00:00.000000Z"
+//	  },
+//	  "user": {"email": "bob@nyaruka.com", "name": "Bob"},
+//	  "origin": "ui",
+//	  "triggered_on": "2000-01-01T00:00:00.000000000-00:00"
+//	}
 //
 // @trigger manual
 type ManualTrigger struct {

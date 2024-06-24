@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"net/url"
 
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/httpx"
-	"github.com/nyaruka/goflow/utils"
 
 	"github.com/shopspring/decimal"
 )

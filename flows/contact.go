@@ -6,15 +6,15 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/contactql"
+	"github.com/developc3ntro/omni-goflow/envs"
+	"github.com/developc3ntro/omni-goflow/excellent/types"
+	"github.com/developc3ntro/omni-goflow/utils"
 	"github.com/nyaruka/gocommon/dates"
 	"github.com/nyaruka/gocommon/jsonx"
 	"github.com/nyaruka/gocommon/urns"
 	"github.com/nyaruka/gocommon/uuids"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/contactql"
-	"github.com/nyaruka/goflow/envs"
-	"github.com/nyaruka/goflow/excellent/types"
-	"github.com/nyaruka/goflow/utils"
 	"github.com/shopspring/decimal"
 
 	"github.com/pkg/errors"
@@ -301,20 +301,20 @@ func (c *Contact) Format(env envs.Environment) string {
 
 // Context returns the properties available in expressions
 //
-//   __default__:text -> the name or URN
-//   uuid:text -> the UUID of the contact
-//   id:text -> the numeric ID of the contact
-//   first_name:text -> the first name of the contact
-//   name:text -> the name of the contact
-//   language:text -> the language of the contact as 3-letter ISO code
-//   created_on:datetime -> the creation date of the contact
-//   last_seen_on:any -> the last seen date of the contact
-//   urns:[]text -> the URNs belonging to the contact
-//   urn:text -> the preferred URN of the contact
-//   groups:[]group -> the groups the contact belongs to
-//   fields:fields -> the custom field values of the contact
-//   channel:channel -> the preferred channel of the contact
-//   tickets:[]ticket -> the open tickets of the contact
+//	__default__:text -> the name or URN
+//	uuid:text -> the UUID of the contact
+//	id:text -> the numeric ID of the contact
+//	first_name:text -> the first name of the contact
+//	name:text -> the name of the contact
+//	language:text -> the language of the contact as 3-letter ISO code
+//	created_on:datetime -> the creation date of the contact
+//	last_seen_on:any -> the last seen date of the contact
+//	urns:[]text -> the URNs belonging to the contact
+//	urn:text -> the preferred URN of the contact
+//	groups:[]group -> the groups the contact belongs to
+//	fields:fields -> the custom field values of the contact
+//	channel:channel -> the preferred channel of the contact
+//	tickets:[]ticket -> the open tickets of the contact
 //
 // @context contact
 func (c *Contact) Context(env envs.Environment) map[string]types.XValue {

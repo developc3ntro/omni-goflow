@@ -3,7 +3,7 @@ package tools
 import (
 	"strings"
 
-	"github.com/nyaruka/goflow/excellent"
+	"github.com/developc3ntro/omni-goflow/excellent"
 )
 
 // RefactorTemplate refactors the passed in template

@@ -1,9 +1,9 @@
 package static
 
 import (
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
 	"github.com/nyaruka/gocommon/urns"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
 )
 
 // Channel is a JSON serializable implementation of a channel asset

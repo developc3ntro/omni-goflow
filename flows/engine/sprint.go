@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"time"
 
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/flows"
 	"github.com/nyaruka/gocommon/dates"
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/flows"
 )
 
 type segment struct {

@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/nyaruka/goflow/assets"
-	"github.com/nyaruka/goflow/envs"
+	"github.com/developc3ntro/omni-goflow/assets"
+	"github.com/developc3ntro/omni-goflow/envs"
 )
 
 type environment struct {
@@ -41,10 +41,10 @@ func (r *assetLocationResolver) FindLocations(name string, level envs.LocationLe
 
 // FindLocationsFuzzy returns matching locations like FindLocations but attempts the following strategies
 // to find locations:
-//   1. Exact match
-//   2. Match with punctuation removed
-//   3. Split input into words and try to match each word
-//   4. Try to match pairs of words
+//  1. Exact match
+//  2. Match with punctuation removed
+//  3. Split input into words and try to match each word
+//  4. Try to match pairs of words
 func (r *assetLocationResolver) FindLocationsFuzzy(text string, level envs.LocationLevel, parent *envs.Location) []*envs.Location {
 	// try matching name exactly
 	if locations := r.FindLocations(text, level, parent); len(locations) > 0 {
