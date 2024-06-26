@@ -54,6 +54,7 @@ type TemplateTranslation struct {
 		Namespace     string                  `json:"namespace"`
 		Country       envs.Country            `json:"country,omitempty"`
 		VariableCount int                     `json:"variable_count"`
+		MediaIds      string                  `json:"media_ids"`
 	}
 }
 
@@ -83,6 +84,9 @@ func (t *TemplateTranslation) Country() envs.Country { return t.t.Country }
 
 // VariableCount returns the number of variables in this template
 func (t *TemplateTranslation) VariableCount() int { return t.t.VariableCount }
+
+// MediaIds returns a string of the Media Id's in this template
+func (t *TemplateTranslation) MediaIds() string { return t.t.MediaIds }
 
 // Channel returns the channel this template translation is for
 func (t *TemplateTranslation) Channel() assets.ChannelReference { return t.t.Channel }

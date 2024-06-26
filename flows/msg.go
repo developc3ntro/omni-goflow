@@ -154,6 +154,7 @@ type MsgTemplating struct {
 	Country_   envs.Country              `json:"country"`
 	Variables_ []string                  `json:"variables,omitempty"`
 	Namespace_ string                    `json:"namespace"`
+	MediaIds_  string                    `json:"media_ids,omitempty"`
 }
 
 // Template returns the template this msg template is for
@@ -172,12 +173,13 @@ func (t MsgTemplating) Variables() []string { return t.Variables_ }
 func (t MsgTemplating) Namespace() string { return t.Namespace_ }
 
 // NewMsgTemplating creates and returns a new msg template
-func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string) *MsgTemplating {
+func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds string) *MsgTemplating {
 	return &MsgTemplating{
 		Template_:  template,
 		Language_:  language,
 		Country_:   country,
 		Variables_: variables,
 		Namespace_: namespace,
+		MediaIds_:  mediaIds,
 	}
 }
