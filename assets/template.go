@@ -49,7 +49,7 @@ type TemplateTranslation interface {
 	Country() envs.Country
 	Namespace() string
 	VariableCount() int
-	MediaIds() string
+	MediaIds() []string
 	Channel() ChannelReference
 }
 
