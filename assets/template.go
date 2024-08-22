@@ -50,6 +50,7 @@ type TemplateTranslation interface {
 	Namespace() string
 	VariableCount() int
 	MediaIds() []string
+	Category() string
 	Channel() ChannelReference
 }
 
