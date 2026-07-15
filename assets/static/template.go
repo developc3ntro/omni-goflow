@@ -48,14 +48,16 @@ func (t *Template) MarshalJSON() ([]byte, error) { return jsonx.Marshal(t.t) }
 // TemplateTranslation represents a single template translation
 type TemplateTranslation struct {
 	t struct {
-		Channel       assets.ChannelReference `json:"channel"         validate:"required"`
-		Content       string                  `json:"content"         validate:"required"`
-		Language      envs.Language           `json:"language"        validate:"required"`
-		Namespace     string                  `json:"namespace"`
-		Country       envs.Country            `json:"country,omitempty"`
-		VariableCount int                     `json:"variable_count"`
-		MediaIds      []string                `json:"media_ids"`
-		Category      string                  `json:"category,omitempty"`
+		Channel              assets.ChannelReference `json:"channel"         validate:"required"`
+		Content              string                  `json:"content"         validate:"required"`
+		Language             envs.Language           `json:"language"        validate:"required"`
+		Namespace            string                  `json:"namespace"`
+		Country              envs.Country            `json:"country,omitempty"`
+		VariableCount        int                     `json:"variable_count"`
+		MediaIds             []string                `json:"media_ids"`
+		Category             string                  `json:"category,omitempty"`
+		HasLTO               bool                    `json:"has_lto"`
+		CouponCodeParamIndex *int                    `json:"coupon_code_param_index"`
 	}
 }
 
@@ -91,6 +93,12 @@ func (t *TemplateTranslation) MediaIds() []string { return t.t.MediaIds }
 
 // Category returns a string of the category in this template
 func (t *TemplateTranslation) Category() string { return t.t.Category }
+
+// HasLTO returns whether this template has a localizable text option
+func (t *TemplateTranslation) HasLTO() bool { return t.t.HasLTO }
+
+// CouponCodeParamIndex returns the index of the coupon code parameter if any
+func (t *TemplateTranslation) CouponCodeParamIndex() *int { return t.t.CouponCodeParamIndex }
 
 // Channel returns the channel this template translation is for
 func (t *TemplateTranslation) Channel() assets.ChannelReference { return t.t.Channel }

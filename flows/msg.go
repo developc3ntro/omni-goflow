@@ -149,13 +149,15 @@ func (m *MsgOut) Topic() MsgTopic { return m.Topic_ }
 
 // MsgTemplating represents any substituted message template that should be applied when sending this message
 type MsgTemplating struct {
-	Template_  *assets.TemplateReference `json:"template"`
-	Language_  envs.Language             `json:"language"`
-	Country_   envs.Country              `json:"country"`
-	Variables_ []string                  `json:"variables,omitempty"`
-	Namespace_ string                    `json:"namespace"`
-	MediaIds_  []string                  `json:"media_ids,omitempty"`
-	Category_  string                    `json:"category"`
+	Template_             *assets.TemplateReference `json:"template"`
+	Language_             envs.Language             `json:"language"`
+	Country_              envs.Country              `json:"country"`
+	Variables_            []string                  `json:"variables,omitempty"`
+	Namespace_            string                    `json:"namespace"`
+	MediaIds_             []string                  `json:"media_ids,omitempty"`
+	Category_             string                    `json:"category"`
+	HasLTO_               bool                      `json:"has_lto"`
+	CouponCodeParamIndex_ *int                      `json:"coupon_code_param_index"`
 }
 
 // Template returns the template this msg template is for
@@ -174,14 +176,16 @@ func (t MsgTemplating) Variables() []string { return t.Variables_ }
 func (t MsgTemplating) Namespace() string { return t.Namespace_ }
 
 // NewMsgTemplating creates and returns a new msg template
-func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds []string, category string) *MsgTemplating {
+func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds []string, category string, hasLTO bool, couponCodeParamIndex *int) *MsgTemplating {
 	return &MsgTemplating{
-		Template_:  template,
-		Language_:  language,
-		Country_:   country,
-		Variables_: variables,
-		Namespace_: namespace,
-		MediaIds_:  mediaIds,
-		Category_:  category,
+		Template_:             template,
+		Language_:             language,
+		Country_:              country,
+		Variables_:            variables,
+		Namespace_:            namespace,
+		MediaIds_:             mediaIds,
+		Category_:             category,
+		HasLTO_:               hasLTO,
+		CouponCodeParamIndex_: couponCodeParamIndex,
 	}
 }

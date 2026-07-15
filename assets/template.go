@@ -52,6 +52,8 @@ type TemplateTranslation interface {
 	MediaIds() []string
 	Category() string
 	Channel() ChannelReference
+	HasLTO() bool
+	CouponCodeParamIndex() *int
 }
 
 // TemplateReference is used to reference a Template
