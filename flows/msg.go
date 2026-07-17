@@ -1,6 +1,7 @@
 package flows
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"github.com/developc3ntro/omni-goflow/assets"
@@ -158,6 +159,7 @@ type MsgTemplating struct {
 	Category_             string                    `json:"category"`
 	HasLTO_               bool                      `json:"has_lto"`
 	CouponCodeParamIndex_ *int                      `json:"coupon_code_param_index"`
+	ContainerMeta         json.RawMessage           `json:"container_meta"`
 }
 
 // Template returns the template this msg template is for
@@ -176,7 +178,7 @@ func (t MsgTemplating) Variables() []string { return t.Variables_ }
 func (t MsgTemplating) Namespace() string { return t.Namespace_ }
 
 // NewMsgTemplating creates and returns a new msg template
-func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds []string, category string, hasLTO bool, couponCodeParamIndex *int) *MsgTemplating {
+func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds []string, category string, hasLTO bool, couponCodeParamIndex *int, containerMeta json.RawMessage) *MsgTemplating {
 	return &MsgTemplating{
 		Template_:             template,
 		Language_:             language,
@@ -187,5 +189,6 @@ func NewMsgTemplating(template *assets.TemplateReference, language envs.Language
 		Category_:             category,
 		HasLTO_:               hasLTO,
 		CouponCodeParamIndex_: couponCodeParamIndex,
+		ContainerMeta:         containerMeta,
 	}
 }

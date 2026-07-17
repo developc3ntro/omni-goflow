@@ -1,6 +1,8 @@
 package static
 
 import (
+	"encoding/json"
+
 	"github.com/developc3ntro/omni-goflow/assets"
 	"github.com/developc3ntro/omni-goflow/envs"
 	"github.com/nyaruka/gocommon/jsonx"
@@ -58,6 +60,7 @@ type TemplateTranslation struct {
 		Category             string                  `json:"category,omitempty"`
 		HasLTO               bool                    `json:"has_lto"`
 		CouponCodeParamIndex *int                    `json:"coupon_code_param_index"`
+		ContainerMeta        json.RawMessage         `json:"container_meta"`
 	}
 }
 
@@ -99,6 +102,9 @@ func (t *TemplateTranslation) HasLTO() bool { return t.t.HasLTO }
 
 // CouponCodeParamIndex returns the index of the coupon code parameter if any
 func (t *TemplateTranslation) CouponCodeParamIndex() *int { return t.t.CouponCodeParamIndex }
+
+// ContainerMeta returns the container metadata for this template
+func (t *TemplateTranslation) ContainerMeta() json.RawMessage { return t.t.ContainerMeta }
 
 // Channel returns the channel this template translation is for
 func (t *TemplateTranslation) Channel() assets.ChannelReference { return t.t.Channel }

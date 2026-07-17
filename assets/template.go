@@ -1,6 +1,7 @@
 package assets
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"github.com/developc3ntro/omni-goflow/envs"
@@ -54,6 +55,7 @@ type TemplateTranslation interface {
 	Channel() ChannelReference
 	HasLTO() bool
 	CouponCodeParamIndex() *int
+	ContainerMeta() json.RawMessage
 }
 
 // TemplateReference is used to reference a Template
