@@ -159,7 +159,7 @@ type MsgTemplating struct {
 	Category_             string                    `json:"category"`
 	HasLTO_               bool                      `json:"has_lto"`
 	CouponCodeParamIndex_ *int                      `json:"coupon_code_param_index"`
-	ContainerMeta         json.RawMessage           `json:"container_meta"`
+	ContainerMeta_        json.RawMessage           `json:"container_meta"`
 }
 
 // Template returns the template this msg template is for
@@ -177,6 +177,21 @@ func (t MsgTemplating) Variables() []string { return t.Variables_ }
 // Namespace returns the namespace that should be for the template
 func (t MsgTemplating) Namespace() string { return t.Namespace_ }
 
+// MediaIds returns the media ids that should be used for the template
+func (t MsgTemplating) MediaIds() []string { return t.MediaIds_ }
+
+// Category returns the category that should be used for the template
+func (t MsgTemplating) Category() string { return t.Category_ }
+
+// HasLTO returns whether the template has a localizable text option
+func (t MsgTemplating) HasLTO() bool { return t.HasLTO_ }
+
+// CouponCodeParamIndex returns the index of the coupon code parameter if any
+func (t MsgTemplating) CouponCodeParamIndex() *int { return t.CouponCodeParamIndex_ }
+
+// ContainerMeta returns the container metadata for this template
+func (t MsgTemplating) ContainerMeta() json.RawMessage { return t.ContainerMeta_ }
+
 // NewMsgTemplating creates and returns a new msg template
 func NewMsgTemplating(template *assets.TemplateReference, language envs.Language, country envs.Country, variables []string, namespace string, mediaIds []string, category string, hasLTO bool, couponCodeParamIndex *int, containerMeta json.RawMessage) *MsgTemplating {
 	return &MsgTemplating{
@@ -189,6 +204,6 @@ func NewMsgTemplating(template *assets.TemplateReference, language envs.Language
 		Category_:             category,
 		HasLTO_:               hasLTO,
 		CouponCodeParamIndex_: couponCodeParamIndex,
-		ContainerMeta:         containerMeta,
+		ContainerMeta_:        containerMeta,
 	}
 }
